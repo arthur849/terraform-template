@@ -1,4 +1,3 @@
-# terraform-template
 # Terraform AWS EC2 Ansible Control Node
 
 This Terraform script provisions an AWS EC2 instance configured to serve as an Ansible Control Node.
@@ -13,12 +12,12 @@ This Terraform script provisions an AWS EC2 instance configured to serve as an A
 
 The script creates an EC2 instance with the following characteristics:
 
-- **Region**: `ap-south-1`
-- **Instance Type**: `t2.micro`
-- **AMI**: `ami-0cc9838aa7ab1dce7` (Ubuntu 18.04 LTS in this example, change to your desired AMI ID)
-- **Subnet ID**: `subnet-03f39704c040dac27`
-- **Key Name**: `arthur-stormer`
-- **Security Group**: `sg-040e94be33ddc6dd5`
+- **Region**: The AWS region where the instance will be deployed.
+- **Instance Type**: The type of EC2 instance.
+- **AMI**: The Amazon Machine Image (AMI) ID for the EC2 instance.
+- **Subnet ID**: The subnet ID where the EC2 instance will be deployed.
+- **Key Name**: The name of the SSH key pair to access the EC2 instance.
+- **Security Group**: The security group IDs for the EC2 instance.
 - **Tags**: 
   - Name: `Stormer Ansible Control Node`
 
@@ -33,7 +32,7 @@ The script creates an EC2 instance with the following characteristics:
 ### Connection Configuration
 
 - Connects via SSH using the user `ubuntu`
-- Uses a private key located at `/usr/local/bin/teraform-project/arthur.pem`
+- Uses a private key located at the specified path
 - Connection timeout set to 2 minutes
 
 ### Outputs

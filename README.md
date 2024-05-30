@@ -5,7 +5,7 @@ This Terraform script provisions an AWS EC2 instance configured to serve as an A
 ## Prerequisites
 
 - [Terraform](https://www.terraform.io/downloads.html) installed
-- AWS account and credentials configured
+- AWS account and credentials configureddd
 - SSH key pair created and accessible
 
 ## Terraform Configuration

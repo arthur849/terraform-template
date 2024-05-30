@@ -37,7 +37,7 @@ The script creates an EC2 instance with the following characteristics:
 
 ### Outputs
 
-- **Public IP**: The public IP address of the EC2 instance
+- **Public IP**: The public IP address of the EC2 instance YEA
 
 ## Usage
 
